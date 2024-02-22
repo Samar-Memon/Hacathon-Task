@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 :root{
     --clip-path-1: polygon(0 40%, 100% 0%, 100% 100%, 0 100%);
@@ -25,10 +26,374 @@
     background-color: var(--orange);
     color: var(--white);
 }
-i{
-    font-size: 5rem;
-    display: block;
-    text-align: center;
+header{
+    height: 90vh;
+    background-color: #f0b217;
+    overflow: hidden;
+}
+nav{
+    position: fixed;
     width: 100%;
-    margin: 5% 0;
+    height: 70px;
+    background-color: var(--white);
+}
+.navbar-section{
+    border: 3px solid green;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-brand{
+    margin-left: 30px;
+    margin-right: 14%;
+    font-size: 30px;
+    color: #f0b217;
+    font-weight: bold;
+}
+.nav-span{
+    margin-right: 5%;
+}
+form.d-flex input{
+    padding: 10px 30px;
+}
+form.d-flex input::placeholder{
+    font-size: 18px;
+}
+
+/* ############################### */
+.home-section{
+    display: flex;
+}
+.home-txt{
+    width: 50%;
+}
+.home-txt h1{
+    font-size: 60px;
+    color: var(--white);
+    font-weight: bold;
+}
+.home-txt h2{
+    font-size: 35px;
+    color: #444;
+    font-weight: bold;
+}
+.home-txt form{
+    background-color: var(--white);
+    padding: 30px;
+}
+.home-txt form h3{
+    background-color: #ddd;
+    width: 50%;
+    text-align: center;
+    color: var(--orange);
+    font-weight: bold;
+}
+.home-txt form h3:hover{
+    background-color: var(--orange);
+    color: var(--black);
+    cursor: pointer;
+}
+.home-txt form input{
+    width: 70%;
+    padding: 23px;
+}
+.home-txt form input::placeholder{
+    font-size: 20px;
+}
+.home-txt form button{
+    font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    width: 30%;
+    border: none;
+    background-color: orange;
+    color: var(--white);
+    transition: all 30ms ease-in-out;
+}
+.home-txt form button:hover{
+    color: var(--orange);
+    background-color: var(--black);
+}
+.home-txt{
+    margin-top: 5%;
+    padding: 20px;
+}
+.home-img{
+    width: 50%;
+    margin: auto;
+}
+.home-img img{
+    display: block;
+    width: 90%;
+    transition: all 300ms ease-in-out;
+}
+.home-img img:hover{
+    transform: scale(0.9);
+}
+
+/* ########################### */
+#about{
+    margin-top: 50px;
+}
+.about-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.a-child{
+    width: 23%;
+    border-top-left-radius: 10px;
+    width: 23%;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}
+.a-child:hover{
+    cursor: pointer;
+}
+.a-child img{
+    display: block;
+    width: 100%;
+}
+.a-child h4{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.a-child span{
+    font-size: 16px;
+    background-color: #ddd;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: var(--orange);
+}
+/* ################## */
+#locate{
+    margin-top: 50px;
+    background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);;
+}
+#locate h1{
+    text-align: center;
+    color: #f0b217;
+    font-size: 40px;
+    font-weight: bold
+}
+.locate-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.l-child{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+.l-child img{
+    width: 30%;
+    margin: auto;
+    height: 50%;
+}
+.l-child h5{
+    font-size: 20px;
+    font-weight: bold;
+}
+.l-child p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+/* ########### */
+#card{
+    margin-top: 70px;
+}
+.card-section{
+    display: flex;
+    flex-direction: column;
+}
+.c-child{
+    display: flex;
+    margin-bottom: 40px;
+}
+.c-img{
+    width: 60%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.c-img img{
+    display: block;
+    width: 100%;
+}
+.c-txt{
+    width: 40%;
+    padding: 20px;
+}
+.c-txt h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.c-txt h1 span{
+    color: var(--orange);
+}
+.c-txt p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.c-txt a{
+    text-decoration: none;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.c-txt a:hover{
+    background-color: rgba(255, 166, 0, 0.572);
+}
+
+/* ############## */
+
+#label{
+    margin-top: 50px;
+    height: 50vh;
+    background: url(https://rjfoodies.netlify.app/assets/img/gallery/cta-two-bg.png) center no-repeat;
+    background-size: cover;
+}
+.label-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 30%;
+    margin: auto;
+}
+.label-section h1{
+    font-size: 40px;
+    color: var(--white);
+    font-weight: bold;
+}
+.label-section a{
+    text-decoration: none;
+    background-color: var(--orange);
+    color: var(--white);
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.label-section a:hover{
+    background-color: rgba(255, 166, 0, 0.572);
+}
+
+/* ########## */
+footer{
+    background-color: #212121;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.ft-child{
+    width: 23%;
+    color: #fff;
+}
+.ft-child h1{
+    font-size: 30px;
+}
+.ft-child li{
+    list-style: none;
+    font-size: 20px;
+}
+
+/* ######### */
+#footer{
+    background-color: #fff;
+    color: #212121;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+}
+
+
+
+/* ############### */
+@media (max-width: 1000px){
+    .home-txt form input{
+        width: 60%;
+    }
+    .a-child{
+        width: 49%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 992px){
+    .collapse{
+        height: 20vh;
+        background-color: #fff;
+        position: relative;
+        padding: 20px;
+    }
+    .nav-span{
+        position: absolute;
+        top: 60%;
+    }
+    .home-section{
+        flex-direction: column;
+    }
+    header{
+        height: 130vh;
+    }
+    .home-txt{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .home-img{
+        width: 100%;
+    }
+    .l-child{
+        width: 49%;
+        margin-bottom: 30px;
+    }
+    .c-child{
+        flex-direction: column;
+    }
+    .c-child:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .c-img{
+        width: 100%;
+    }
+    .c-txt{
+        width: 100%;
+    }
+    .label-section{
+        width: 100%;
+    }
+    .ft-child{
+        width: 49%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 768px){
+    .home-txt h1{
+        font-size: 35px;
+    }
+    .home-txt h2{
+        font-size: 22px;
+    }
+}
+@media(max-width: 630px){
+    .a-child{
+        width: 100%;
+    }
+    .ft-child{
+        width: 100%;
+    }
 }
